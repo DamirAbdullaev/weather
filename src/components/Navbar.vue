@@ -6,7 +6,7 @@
 
             <div class="nav__search">
                 <img src="@/assets/img/dots.svg" alt="dots">
-                <input type="text" placeholder="Введите название города">
+                <input type="text" placeholder="Введите название города" v-model="city" @keydown.enter="getWeather(city), city = ''">
             </div>
         </nav>
 
@@ -14,7 +14,19 @@
 </template>
 
 <script>
-    export default {
-        
+
+import { mapState, mapGetters, mapActions, mapMutations } from 'vuex'
+
+export default {
+
+    data() {
+        return {
+            city: '',
+        }
+    },
+
+    methods: {
+        ...mapActions(['getWeather'])
     }
+}
 </script>
