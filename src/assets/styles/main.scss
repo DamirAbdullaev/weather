@@ -9,3 +9,51 @@
     font-family: 'Montserrat';
     font-weight: 400;
 }
+
+.container {
+     max-width: 1320px;
+     width: 100%;
+     margin: 0 auto;
+     padding: 0 15px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    &__search {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        & input {
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            background: rgba(71, 147, 255, 0.2);
+
+            padding: 9px 20px;
+            width: 300px;
+
+            font-weight: 500;
+            font-size: 16px;
+            color: #000;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    & span {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #4793FF;
+    }
+}
