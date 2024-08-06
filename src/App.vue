@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container app">
     <Navbar />
     <Main v-if="weather" />
 
