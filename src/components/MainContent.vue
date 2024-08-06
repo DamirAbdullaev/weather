@@ -16,28 +16,28 @@
                     <img src="@/assets/img/temp.svg" alt="temp">
                 </div>
                 <span>Температура</span>
-                <p>20° - ощущается как 17°</p>
+                <p>{{ weather.current.temp }}° - ощущается как {{ weather.current.feels_like }}°</p>
             </div>
             <div class="main__content_right-item">
                 <div class="main__content_right-item-img">
                     <img src="@/assets/img/pressure.svg" alt="temp">
                 </div>
                 <span>Давление</span>
-                <p>765 мм ртутного столба - нормальное</p>
+                <p>{{ weather.current.pressure }} мм ртутного столба - нормальное</p>
             </div>
             <div class="main__content_right-item">
                 <div class="main__content_right-item-img">
                     <img src="@/assets/img/precipitation.svg" alt="temp">
                 </div>
                 <span>Осадки</span>
-                <p>Без осадков</p>
+                <p>{{ weather.current.weather[0].description }}</p>
             </div>
             <div class="main__content_right-item">
                 <div class="main__content_right-item-img">
                     <img src="@/assets/img/wind.svg" alt="temp">
                 </div>
                 <span>Ветер</span>
-                <p>3 м/с юго-запад - легкий ветер</p>
+                <p>{{ weather.current.wind_speed }} м/с юго-запад - легкий ветер</p>
             </div>
         </div>
     </div>

@@ -1,5 +1,19 @@
 @import 'fonts.scss';
 
+:root {
+    --bg-primary: #fff;
+    --bg-secondary: #fff;
+    --bg-tertiary: #fff;
+    --text-primary: #000;
+  }
+  
+
+body {
+    background: var(--bg-primary);
+    transition: 0.3s ease-in-out;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +53,8 @@
 
             font-weight: 500;
             font-size: 16px;
-            color: #000;
+            color: var(--text-primary);
+            transition: 0.3s ease-in-out;
         }
     }
 }
@@ -69,7 +84,8 @@
 
         &_left {
             box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
-            background: #fff;
+            background: var(--bg-secondary);
+            transition: 0.3s ease-in-out;
             padding: 20px;
             border-radius: 20px;
             position: relative;
@@ -89,7 +105,8 @@
 
             &-text {
                 font-size: 40px;
-                color: #000;
+                color: var(--text-primary);
+                transition: 0.3s ease-in-out;
                 margin-bottom: 30px;
             }
 
@@ -107,7 +124,8 @@
 
         &_right {
             box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
-            background: #fff;
+            background: var(--bg-secondary);
+            transition: 0.3s ease-in-out;
             border-radius: 20px;
             padding: 42px 31px;
             position: relative;
@@ -131,7 +149,8 @@
 
                 & p {
                     font-size: 14px;
-                    color: #000;
+                    color: var(--text-primary);
+                    transition: 0.3s ease-in-out;
                     z-index: 1;
                 }
 
@@ -141,6 +160,8 @@
                     border-radius: 100%;
                     fill: #fff;
                     box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+                    background: var(--bg-tertiary);
+                    transition: 0.3s ease-in-out;
 
                     display: flex;
                     align-items: center;
@@ -152,6 +173,8 @@
                 position: absolute;
                 top: 0;
                 right: 0;
+
+                border-radius: 0 20px 0 0;
             }
         }
     }
