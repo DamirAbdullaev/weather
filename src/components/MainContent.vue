@@ -65,7 +65,7 @@ import weatherName from '@/icons'
             },
 
             getImg() {
-                return weatherName[this.getDescription] || weatherName['ясно']
+                return weatherName[this.getDescription] || weatherName['пасмурно']
             }
 
         },

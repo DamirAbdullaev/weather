@@ -178,6 +178,89 @@ body {
             }
         }
     }
+
+    &__week {
+        margin-top: 50px;
+        transition: 0.3s ease-in-out;
+        &_btns {
+            display: flex;
+            justify-content: space-between;
+
+            .open {
+                border-radius: 5px;
+                box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+                background: #4793ff;
+                padding: 7px 20px;
+                border: none;
+
+                font-size: 18px;
+                color: #fff;
+            }
+
+            .close {
+                border-radius: 5px;
+                box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+                background: var(--bg-secondary);
+                padding: 7px 20px;
+                border: none;
+
+                font-size: 18px;
+                color: var(--text-primary);
+                transition: 0.3s ease-in-out;
+            }
+        }
+
+        &_box {
+            margin-top: 15px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+            background: var(--bg-secondary);
+            transition: 0.3s ease-in-out;
+            width: 100%;
+            overflow-y: auto;
+
+            display: flex;
+            gap: 20px;
+
+            &.active {
+                width: max-content;
+            }
+
+            &_slide {
+                display: flex;
+                gap: 20px;
+                width: 100%;
+                justify-content: space-around;
+            }
+
+
+            &_item {
+                border-radius: 10px;
+                background: rgba(71, 147, 255, 0.2);
+                padding: 11px;
+                min-width: 149px;
+
+                & img {
+                    margin-top: 12px;
+                    margin-bottom: 12px;
+                }
+
+                &-title {
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: var(--text-primary);
+                    transition: 0.3s ease-in-out;
+                }
+
+                &-text {
+                    font-size: 14px;
+                    color: #939cb0;
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
 }
 
 
