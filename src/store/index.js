@@ -19,7 +19,7 @@ export default createStore({
   actions: {
     async getWeather(context, city) {
       try {
-        let response = await axios.get(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${context.state.apiKey}`)
+        let response = await axios.get(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${context.state.apiKey}`)
 
         if (response.data.length) {
           let { lat, lon, local_names } = response.data[0] 
